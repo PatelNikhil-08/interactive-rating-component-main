@@ -1,0 +1,116 @@
+
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Overpass', sans-serif;
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+}
+.image-circle{
+    background-color: var(--Medium-Grey);
+    border-radius: 50%;
+    padding: 1em;
+
+}
+.card{
+    background-color: var(--Dark-Blue);
+    width: 90%;
+    padding: 1.5em;
+    border-radius: 1.5em; 
+    margin: 2em auto; 
+}
+
+.heading{
+    color: var(--White);
+    font-size: 1.6rem;
+    margin-bottom: 0.9em;
+}
+
+.paragraph{
+    color: var(--Light-Grey); 
+    font-size: 1rem; 
+    line-height: 1.9em;
+}
+
+.ratings {
+    color: var(--Light-Grey); 
+    display: flex; 
+    justify-content: space-between;
+    font-weight: bold; 
+    margin: 1.7em 0; 
+}
+
+
+.circle{
+    background-color: var(--Medium-Grey);
+    border-radius: 50%; 
+    font-weight: bold;
+    padding: 0.8em 1.2em;
+    cursor: pointer; 
+}
+
+.circle:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White); 
+}
+
+.circle:active {
+    background-color: hsl(25, 97%, 53%);
+    color: var(--white);
+  }
+
+input[type="radio"]{
+    display: none;
+}
+
+.card-component button{
+    text-transform: uppercase;
+    letter-spacing: 4px; 
+    color: var(--White); 
+    background-color: hsl(25, 97%, 53%);
+    border: none; 
+    width: 100%; 
+    border-radius: 2em;
+    padding: 1em;
+    border-radius: 2em;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.card-component button:active {
+    background-color: var(--white);
+    color: hsl(25, 97%, 53%);
+}
+
+.card-component button:hover {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: hsl(25, 97%, 53%);
+    color: var(--White);
+}
+
+.next-card-component{
+    display: none; 
+    text-align: center; 
+}
